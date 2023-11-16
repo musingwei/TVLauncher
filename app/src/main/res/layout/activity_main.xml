@@ -42,7 +42,7 @@
             tools:ignore="RtlSymmetry" />
 
 
-        <androidx.recyclerview.widget.RecyclerView
+        <androidx.leanback.widget.HorizontalGridView
             android:id= "@+id/main_frame"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -50,6 +50,7 @@
             android:orientation = "horizontal"
             app:data="@{viewmodel.appList}"
             />
+
         <TextView
             android:id="@+id/secondary_row_title"
             android:layout_width="match_parent"
@@ -61,14 +62,22 @@
             tools:ignore="RtlSymmetry" />
 
 
-        <androidx.recyclerview.widget.RecyclerView
+        <androidx.leanback.widget.HorizontalGridView
             android:id= "@+id/secondary_frame"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/secondary_row_title"
-
             android:orientation = "horizontal"
             app:data="@{viewmodel.seconds}"
+            />
+
+        <androidx.leanback.widget.HorizontalGridView
+            android:id="@+id/settings_frame"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@id/secondary_frame"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="@dimen/list_view_margin_top"
             />
 
 

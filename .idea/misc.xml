@@ -4,12 +4,17 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/PhoenixLauncher3/app/src/main/res/drawable/ic_android.xml" value="0.1" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/PhoenixLauncher3/app/src/main/res/drawable/ic_apps.xml" value="0.268" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/PhoenixLauncher3/app/src/main/res/drawable/ic_apps_vector.xml" value="0.268" />
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/PhoenixLauncher3/app/src/main/res/drawable/ic_launcher.xml" value="0.1" />
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/PhoenixLauncher3/app/src/main/res/drawable/ic_launcher_home.xml" value="0.1" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/PhoenixLauncher3/app/src/main/res/drawable/ic_network.xml" value="0.268" />
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/PhoenixLauncher3/app/src/main/res/drawable/icon_background.xml" value="0.1" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/PhoenixLauncher3/app/src/main/res/drawable/logo_company.xml" value="0.268" />
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/PhoenixLauncher3/app/src/main/res/drawable/logo_phoenix.xml" value="0.1" />
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/PhoenixLauncher3/app/src/main/res/layout/activity_main.xml" value="0.2552083333333333" />
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/PhoenixLauncher3/app/src/main/res/layout/item_main_app.xml" value="0.5" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/PhoenixLauncher3/app/src/main/res/layout/item_settings.xml" value="0.33" />
       </map>
     </option>
   </component>

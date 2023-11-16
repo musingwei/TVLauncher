@@ -13,7 +13,13 @@ import com.gil.phoenixlauncher3.databinding.ItemMainAppBinding
 class MainAppAdapter(private var data: List<AppData>): RecyclerView.Adapter<MainAppAdapter.MainViewHolder>() {
 
 
-    class MainViewHolder(private val imageBinding:ItemMainAppBinding)
+    interface ItemClickListener{
+        fun onItemClick(item: AppData?)
+    }
+
+    private var mItemClickListener: ItemClickListener? = null
+
+    inner class MainViewHolder(private val imageBinding:ItemMainAppBinding)
         : RecyclerView.ViewHolder(imageBinding.root) {
         init {
             itemView.isFocusable = true
@@ -29,6 +35,9 @@ class MainAppAdapter(private var data: List<AppData>): RecyclerView.Adapter<Main
             }
         }
             fun bindImage(appData: AppData?){
+                itemView.setOnClickListener {
+                    mItemClickListener?.onItemClick(appData)
+                }
                 imageBinding.appData = appData
             }
     }
@@ -54,5 +63,9 @@ class MainAppAdapter(private var data: List<AppData>): RecyclerView.Adapter<Main
     fun setData(data: List<AppData>){
         this.data = data
         notifyDataSetChanged()
+    }
+
+    fun setOnClickListener(listener: ItemClickListener) {
+        this.mItemClickListener = listener
     }
 }

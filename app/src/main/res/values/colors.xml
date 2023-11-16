@@ -2,4 +2,5 @@
 <resources>
     <color name="transparent">#00FFFFFF</color>
     <color name="focused_alpha">#1AFFFFFF</color>
+    <color name="color_wifi_icon">#CCFFFFFF</color>
 </resources>
