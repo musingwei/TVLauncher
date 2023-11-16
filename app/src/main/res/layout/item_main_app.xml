@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="appData"
+            type="com.gil.phoenixlauncher3.AppData" />
+    </data>
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="160dp"
+        android:layout_height="135dp"
+        xmlns:tools="http://schemas.android.com/tools"
+
+        app:cardBackgroundColor="@color/transparent"
+        app:cardElevation="0dp"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height ="match_parent"
+
+            >
+            <ImageView
+                android:id="@+id/app_banner"
+                android:layout_width="match_parent"
+                android:layout_height ="0dp"
+                tools:src="@drawable/logo_company"
+                app:imageDrawable="@{appData.banner}"
+                android:scaleType="fitCenter"
+                android:contentDescription="TOD"
+                tools:ignore="HardcodedText"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/app_label"
+                />
+            <TextView
+                android:id="@+id/app_label"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:text = "YourApp\nGoogle"
+                android:gravity = "center"
+                android:padding="5dp"
+                android:fontFamily= "sans-serif-medium"
+                android:text="@{appData.label}"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+</layout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.gil.phoenixlauncher3.MainPageViewModel" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView
+            android:id="@+id/app_logo"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_margin="@dimen/layout_margin"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/logo_company"/>
+        <TextClock
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize = "36sp"
+            android:fontFamily= "sans-serif-light"
+            android:layout_margin="@dimen/layout_margin"
+            tools:text= "12:35"/>
+
+        <TextView
+            android:id="@+id/main_row_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/app_logo"
+            android:text="@string/main_row_title"
+            android:layout_marginTop="@dimen/list_view_margin"
+            android:paddingStart="@dimen/list_view_margin"
+            tools:ignore="RtlSymmetry" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id= "@+id/main_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/main_row_title"
+            android:orientation = "horizontal"
+            app:data="@{viewmodel.appList}"
+            />
+        <TextView
+            android:id="@+id/secondary_row_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/main_frame"
+            android:text="@string/secondary_row_title"
+            android:layout_marginTop="@dimen/list_view_margin_top"
+            android:paddingStart="@dimen/list_view_margin"
+            tools:ignore="RtlSymmetry" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id= "@+id/secondary_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/secondary_row_title"
+
+            android:orientation = "horizontal"
+            app:data="@{viewmodel.seconds}"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

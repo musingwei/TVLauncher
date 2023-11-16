@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="layout_margin">25dp</dimen>
+    <dimen name="first_row_top_margin">60dp</dimen>
+    <dimen name="list_view_margin">35dp</dimen>
+    <dimen name="list_view_margin_top">20dp</dimen>
+
+
+</resources>

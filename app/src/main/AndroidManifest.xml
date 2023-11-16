@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gil.phoenixlauncher3">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PhoenixLauncher3" >
+        <activity
+            android:name=".MainActivity"
+            android:banner="@drawable/ic_launcher_home"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:icon="@drawable/ic_launcher_home"
+            android:logo="@drawable/ic_launcher_home"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN"
+                    >
+                </action>
+                <category
+                    android:name="android.intent.category.HOME"
+                    >
+                </category>
+                <category
+                    android:name="android.intent.category.DEFAULT"
+                    >
+                </category>
+                <category
+                    android:name="android.intent.category.MONKEY"
+                    >
+                </category>
+                <category
+                    android:name="android.intent.category.LAUNCHER_APP"
+                    >
+                </category>
+
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
